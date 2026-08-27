@@ -54,7 +54,7 @@ img {
 }
 
 .section {
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 .eyebrow {
@@ -71,7 +71,7 @@ img {
     justify-content: space-between;
     align-items: flex-end;
     gap: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .section-heading > p {
@@ -595,7 +595,7 @@ h2 em {
 .cta {
     position: relative;
     overflow: hidden;
-    padding: 150px 0;
+    padding: 100px 0;
     text-align: center;
     background: radial-gradient(circle at center, #222 0%, #090909 65%);
 }
@@ -696,7 +696,7 @@ h2 em {
 .footer {
     border-top: 1px solid var(--line);
     background: #050505;
-    padding: 60px 0 30px;
+    padding: 50px 0 30px;
 }
 
 .footer-main {
@@ -753,7 +753,7 @@ h2 em {
 }
 
 /* =========================
-   FLOATING PHONE & RESPONSIVE
+   FLOATING PHONE & RESPONSIVE (MOBILE OPTIMIZED)
 ========================= */
 
 .floating-phone {
@@ -783,6 +783,42 @@ h2 em {
     .menu-button { display: block; }
     .services-grid, .comparison-grid, .pricing-grid, .about-grid, .contact-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Компактные отступы секций */
+    .section {
+        padding: 45px 0;
+    }
+
+    .cta {
+        padding: 50px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+        gap: 15px;
+    }
+
+    .about-stats {
+        margin-top: 30px;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .contact-grid {
+        gap: 35px;
+    }
+
+    .contact-details {
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .footer-main {
